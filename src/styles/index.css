@@ -1,11 +1,40 @@
-/* 
+:root { font-size: 18px; }
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+body {
+  background-color: #d6eaf8 !important;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
 
-*/
+.todo-card {
+  max-width: 760px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 80px;
+}
+
+.form-control {
+  width: 100%;
+  max-width: none;
+}
+
+.todo-input {
+  font-size: 1.1rem;
+  padding: 14px 16px;
+  width: 100%;
+  max-width: none;
+}
+
+.todo-item .btn-delete { 
+  opacity: 0; 
+  transition: opacity .2s ease; 
+}
+.todo-item:hover .btn-delete { 
+  opacity: 1; 
+}
+
+.todo-text.done {
+  text-decoration: line-through;
+  color: #6c757d;
+}
